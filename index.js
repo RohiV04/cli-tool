@@ -18,7 +18,7 @@ async function welcome() {
   rainbowTitle.stop();
 
   console.log(`
-        ${chalk.bgBlue("I am a process on your computer.")} 
+        ${chalkAnimation.glitch("I am a process on your computer.")} 
         you can ask me  ${chalk.bgRed("any thing")}
         I will try to answer you.
         type ${chalk.bgGreen("exit")} to exit
@@ -32,27 +32,29 @@ async function ask() {
       type: "input",
       message: "What do you want to know?",
       default() {
-        return "How are you?";
+        return "Hello";
       },
     },
   ]);
-  console.log(question);
-  if (question === "exit") {
-    thankYou();
+
+  if (question.toLowerCase() === "exit") {
+    await thankYou();
+    process.exit(0);
+  } else {
+    const spinner = createSpinner("I'm thinking...");
+    spinner.start();
+
+    await sleep();
+    
+    const { data } = await axios.get(
+      `https://sih-server.adaptable.app/chat-completion/${question}`
+    );
+    spinner.stop();
+
+    console.log(`${chalk.green(data.output)}`);
+
+    await ask(); // recursively call ask to keep asking questions
   }
-  const spinner = createSpinner("I'm thinking...");
-
-  spinner.start();
-
-  await sleep();
-  const { data } = await axios.get(
-    `https://sih-server.adaptable.app/chat-completion/${question}`
-  );
-  spinner.stop();
-
-  console.log(`${chalk.green(data.output)}`);
-
-  await ask(); // recursively call ask to keep asking questions
 }
 
 const thankYou = () => {
