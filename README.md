@@ -1,6 +1,3 @@
-Certainly! Here's the Markdown code for the README:
-
-````markdown
 # @rohith_vangapandu/cli-tool
 
 This CLI tool acts as a personal assistant, providing a seamless and interactive experience for users.
@@ -9,10 +6,8 @@ This CLI tool acts as a personal assistant, providing a seamless and interactive
 
 To install the CLI tool, you can use npm. Open your terminal and run the following command:
 
-```bash
-npm install -g @rohith_vangapandu/cli-tool
-```
-````
+    npm install -g @rohith_vangapandu/cli-tool
+
 
 This installs the tool globally, allowing you to access it from anywhere in your terminal.
 
