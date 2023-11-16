@@ -1,11 +1,9 @@
 #!/usr/bin/env node
 import chalk from "chalk";
-import clear from "clear";
 import gradient from "gradient-string";
 import chalkAnimation from "chalk-animation";
 import figlet from "figlet";
 import inquirer from "inquirer";
-import "axios";
 import { createSpinner } from "nanospinner";
 import axios from "axios";
 
@@ -13,12 +11,12 @@ const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
 
 async function welcome() {
   const rainbowTitle = chalkAnimation.rainbow("Welcome Hacker \n");
-
+  // const processTitle = chalkAnimation.glitch("Processing your request \n");
   await sleep();
   rainbowTitle.stop();
 
   console.log(`
-        ${chalkAnimation.glitch("I am a process on your computer.")} 
+        ${chalk.bgYellowBright.bold("Im a program that can answer your questions")}
         you can ask me  ${chalk.bgRed("any thing")}
         I will try to answer you.
         type ${chalk.bgGreen("exit")} to exit
@@ -41,11 +39,11 @@ async function ask() {
     await thankYou();
     process.exit(0);
   } else {
-    const spinner = createSpinner("I'm thinking...");
+    const spinner = createSpinner("Thinking...");
     spinner.start();
 
     await sleep();
-    
+
     const { data } = await axios.get(
       `https://sih-server.adaptable.app/chat-completion/${question}`
     );

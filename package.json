@@ -1,6 +1,6 @@
 {
   "name": "@rohith_vangapandu/cli-tool",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "This is a CLI tool that acts like a personal assistant.",
   "main": "index.js",
   "type": "module",
@@ -15,7 +15,12 @@
   "keywords": [
     "cli",
     "tool",
-    "assistant"
+    "assistant",
+    "personal",
+    "rohith",
+    "vangapandu",
+    "rohith_vangapandu",
+    "bot"
   ],
   "author": "Rohith Vangapandu",
   "license": "ISC",
@@ -24,7 +29,6 @@
     "axios": "^1.6.1",
     "chalk": "^5.3.0",
     "chalk-animation": "^2.0.3",
-    "clear": "^0.1.0",
     "figlet": "^1.7.0",
     "gradient-string": "^2.0.2",
     "inquirer": "^9.2.12",
