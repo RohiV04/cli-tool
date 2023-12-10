@@ -1,6 +1,6 @@
 {
   "name": "@rohith_vangapandu/cli-tool",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This is a CLI tool that acts like a personal assistant.",
   "main": "index.js",
   "type": "module",
