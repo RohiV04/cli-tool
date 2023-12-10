@@ -25,10 +25,9 @@
   "author": "Rohith Vangapandu",
   "license": "ISC",
   "dependencies": {
-    "@rohith_vangapandu/cli-tool": "^1.0.4",
+    "@rohith_vangapandu/cli-tool": "^1.0.5",
     "axios": "^1.6.1",
     "chalk": "^5.3.0",
-    "chalk-animation": "^2.0.3",
     "figlet": "^1.7.0",
     "gradient-string": "^2.0.2",
     "inquirer": "^9.2.12",
