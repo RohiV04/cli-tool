@@ -19,7 +19,7 @@ Once installed, you can run the CLI tool using the following command:
 npx cli-tool
 ```
 
-![alt text](https://github.com/RohiV04/cli-tool/blob/main/test2.png?raw=true "Title Text")
+
 
 This will start the personal assistant, and you can follow the on-screen instructions to interact with it.
 
@@ -33,7 +33,6 @@ npx cli-tool
 
 After running the command, you'll be prompted to ask a question or provide a command. Follow the instructions, and the personal assistant will respond accordingly.
 
-![alt text](https://github.com/RohiV04/cli-tool/blob/main/test1.png?raw=true "Title Text")
 
 ## Features
 
@@ -45,7 +44,6 @@ After running the command, you'll be prompted to ask a question or provide a com
 
 - [axios](https://www.npmjs.com/package/axios)
 - [chalk](https://www.npmjs.com/package/chalk)
-- [chalk-animation](https://www.npmjs.com/package/chalk-animation)
 - [figlet](https://www.npmjs.com/package/figlet)
 - [gradient-string](https://www.npmjs.com/package/gradient-string)
 - [inquirer](https://www.npmjs.com/package/inquirer)
